@@ -1,7 +1,7 @@
 import java.net.Socket;
 import java.io.*;
 
-public class EchoClient1 {
+public class EchoClient {
 
     public static void main(String[] args) throws Exception {
         String message;

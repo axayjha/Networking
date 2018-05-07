@@ -2,7 +2,7 @@ import java.net.Socket;
 import java.net.ServerSocket;
 import java.io.*;
 
-public class EchoServer1 {
+public class EchoServer {
 
     public static void main(String[] args) throws Exception {
 
