@@ -22,7 +22,7 @@ public class FactServer
 		
 		/* sending back the result to client */
 		DataOutputStream outToClient = new DataOutputStream(clientSocket.getOutputStream());
-		outToClient.writeBytes(Integer.toString(result) + "\n");
+		outToClient.writeBytes(result + "\n");
 		clientSocket.close();
 	}
 }

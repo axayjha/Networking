@@ -33,7 +33,7 @@ public class CalcServer
 		
 		/* sending back the result to client */
 		DataOutputStream outToClient = new DataOutputStream(clientSocket.getOutputStream());
-		outToClient.writeBytes(Double.toString(result) + "\n");
+		outToClient.writeBytes(result + "\n");
 		clientSocket.close();
 	}
 }
