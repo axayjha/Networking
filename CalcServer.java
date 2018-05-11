@@ -16,7 +16,7 @@ public class CalcServer
 		input = input + " ";
 		String arr[]= input.split(" ");
 		System.out.println(arr[0] + arr[1] + arr[2]);
-		int result = 0, n1 = Integer.parseInt(arr[0]), n2 = Integer.parseInt(arr[1]);
+		double result = 0, n1 = Double.parseDouble(arr[0]), n2 = Double.parseDouble(arr[1]);
 
 		/* doing requires calculations */
 		if(arr[2].equals("+"))	
@@ -33,7 +33,7 @@ public class CalcServer
 		
 		/* sending back the result to client */
 		DataOutputStream outToClient = new DataOutputStream(clientSocket.getOutputStream());
-		outToClient.writeBytes(Integer.toString(result) + "\n");
+		outToClient.writeBytes(Double.toString(result) + "\n");
 		clientSocket.close();
 	}
 }
